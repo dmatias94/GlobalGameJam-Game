@@ -352,6 +352,12 @@ GameObject:
     type: 3}
   m_PrefabInstance: {fileID: 1169459065}
   m_PrefabAsset: {fileID: 0}
+--- !u!4 &801624708 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 220654186551852262, guid: 3688f8ab219219f47acc7fb095a5701a,
+    type: 3}
+  m_PrefabInstance: {fileID: 1169459065}
+  m_PrefabAsset: {fileID: 0}
 --- !u!114 &801624709
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -725,6 +731,66 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 28201946}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1568585300
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1568585301}
+  m_Layer: 0
+  m_Name: LaserEyes (1)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1568585301
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1568585300}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -0.00238, y: 0.0401, z: 0.0043}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 801624708}
+  m_RootOrder: 34
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1816368529
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1816368530}
+  m_Layer: 0
+  m_Name: LaserEyes
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1816368530
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1816368529}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0.00179, y: 0.04024, z: 0.00499}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 801624708}
+  m_RootOrder: 33
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1881830869 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 5081639702999069044, guid: 3688f8ab219219f47acc7fb095a5701a,
