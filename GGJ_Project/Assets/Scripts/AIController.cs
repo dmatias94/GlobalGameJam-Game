@@ -4,17 +4,22 @@ using UnityEngine;
 
 public class AIController : MonoBehaviour
 {
+    [SerializeField]
    public Transform Player;
      int MoveSpeed = 1;
      int MaxDist = 10;
      int MinDist = 5;
  
- 
+     GameObject bullet;
+
+     public float firerate;
+     public float nextfire;
  
  
      void Start()
      {
- 
+        firerate = 1f;
+        nextfire = Time.time;
      }
  
      void Update()
@@ -30,10 +35,26 @@ public class AIController : MonoBehaviour
  
              if (Vector3.Distance(transform.position, Player.position) <= MaxDist)
              {
-                 //Here Call any function U want Like Shoot at here or something
+                 CheckIfTimeToFire();
              }
  
          }
      }
+
+     
+void CheckIfTimeToFire()
+ {
+        if (Time.time > nextfire)
+    {
+        Instantiate (bullet, transform.position, Quaternion.identity);
+        nextfire = Time.time + firerate;
+    }
+
  }
+
+}
+
+
+
+ 
 
