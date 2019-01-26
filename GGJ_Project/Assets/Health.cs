@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class Health : MonoBehaviour
 {
+    float speed = 5f;
+    float height = 0.5f;
     // Start is called before the first frame update
     void Start()
     {
@@ -13,7 +15,8 @@ public class Health : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        transform.Rotate(new Vector3(0,0,45) * Time.deltaTime * 6);
-        transform.Translate(new Vector3(0,0,Mathf.Sin (Time.time * 7)) * Time.deltaTime);
+        Vector3 pos = transform.position;
+        float newY = Mathf.Sin(Time.time * speed);
+        transform.position = new Vector3(pos.x, newY, pos.z) * height;
     }
 }
