@@ -79,7 +79,7 @@ public class RandomGun : MonoBehaviour
         // Set the shootRay so that it starts at the end of the gun and points forward from the barrel.
         shootRay.origin = transform.position;
         shootRay.direction = transform.forward;
-
+/* 
         // Perform the raycast against gameobjects on the shootable layer and if it hits something...
         if (Physics.Raycast(shootRay, out shootHit, range, shootableMask))
         {
@@ -102,5 +102,6 @@ public class RandomGun : MonoBehaviour
             // ... set the second position of the line renderer to the fullest extent of the gun's range.
             gunLine.SetPosition(1, shootRay.origin + shootRay.direction * range);
         }
+        */
     }
 }
