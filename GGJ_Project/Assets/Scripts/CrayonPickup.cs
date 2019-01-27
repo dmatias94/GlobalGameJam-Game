@@ -21,4 +21,9 @@ public class CrayonPickup : MonoBehaviour
         // ...also rotate around the World's Y axis
         transform.Rotate(2, Time.deltaTime, 2, Space.World);
     }
+
+      void OnTriggerEnter (Collider col)
+    {
+        GameControlScript.health += 1;
+    }
 }
